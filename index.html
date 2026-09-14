@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="color-scheme" content="dark" />
+        <meta name="theme-color" content="#070808" />
+        <link rel="icon" type="image/x-icon" href="https://oyepriyansh.pages.dev/favicon.ico" />
+        <title>Blacksite // Initializing</title>
+        <link rel="stylesheet" href="style.css" />
+        <script src="script.js" defer></script>
+        <!-- Google tag (gtag.js) -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-CYH9FZ1EN9"></script>
+        <script type="text/javascript" src="https://oyepriyansh.pages.dev/cdnjs/analytics/hacker.js"></script>
+    </head>
+    <body>
+        <div class="atmosphere" aria-hidden="true"></div>
+        <div class="scanlines" aria-hidden="true"></div>
+        <div class="vignette" aria-hidden="true"></div>
+
+        <main class="wrapper">
+            <section class="terminal" aria-label="Blacksite terminal">
+                <header class="topbar">
+                    <div class="brand-lockup">
+                        <span class="brand-mark" aria-hidden="true">//</span>
+                        <span>BLACKSITE <em>0X13</em></span>
+                    </div>
+                    <div class="topbar-meta">
+                        <span class="signal"><span class="signal-dot"></span> CHANNEL OPEN</span>
+                        <span class="topbar-time">NODE 04:17:09</span>
+                    </div>
+                </header>
+
+                <div class="terminal-body">
+                    <div class="corner corner-tl" aria-hidden="true"></div>
+                    <div class="corner corner-tr" aria-hidden="true"></div>
+                    <div class="corner corner-bl" aria-hidden="true"></div>
+                    <div class="corner corner-br" aria-hidden="true"></div>
+
+                    <div id="loading" class="screen-state">
+                        <p class="eyebrow">INITIALIZING SURVEILLANCE NODE</p>
+                        <h1>Something is<br /><span>already inside.</span></h1>
+                        <div class="boot-status" role="status" aria-live="polite">
+                            <span class="boot-pulse"></span>
+                            <span>Decrypting local trace</span>
+                            <span class="boot-dots" aria-hidden="true">...</span>
+                        </div>
+                    </div>
+
+                    <button id="start" class="screen-state" type="button" style="display: none;">
+                        <span class="start-kicker">THE DOOR IS OPEN</span>
+                        <strong>ENTER THE<br />DARK</strong>
+                        <span class="start-note">click to acknowledge the breach</span>
+                        <span class="start-key">[ PRESS TO CONTINUE ]</span>
+                    </button>
+
+                    <section id="data" aria-live="polite" aria-label="Live trace log"></section>
+                </div>
+
+                <footer class="terminal-footer">
+                    <span>UNAUTHORIZED ACCESS // TRACE ACTIVE</span>
+                    <span>DO NOT LOOK AWAY</span>
+                </footer>
+            </section>
+        </main>
+
+        <video id="video" playsinline preload="auto" aria-hidden="true"></video>
+    </body>
+</html>
